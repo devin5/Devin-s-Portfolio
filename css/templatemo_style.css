@@ -255,10 +255,19 @@ ul.main-menu li a {
   text-transform: uppercase;
   font-size: 13px;
 }
+ul.main-menu li a:hover {
+  color: #4e91c9;
+}
 
 ul.main-menu li a.active {
-  background: #4e91c9;
+  background-image: linear-gradient(to right, rgb(103, 57, 212), #539edb);
   color: #fff;
+}
+ul.main-menu li a.active:hover {
+  background-image: linear-gradient(to left, rgb(103, 57, 212), #539edb);
+  color: #fff;
+  transition: 1s;
+  border: 2px #4e91c9 solid;
 }
 
 @media screen and (max-width: 992px) {
@@ -446,7 +455,7 @@ h2.welcome-title {
 }
 
 .story-bg {
-  background: url("../img/story-bg.jpg");
+  background: url("../img/austin.png");
   background-repeat: no-repeat;
   background-size: cover;
   position: absolute;
@@ -931,7 +940,8 @@ span.solid-line {
 }
 
 .main-footer .social li a:hover {
-  background: #4e91c9;
+  background-image: linear-gradient(to left, rgb(103, 57, 212), #539edb);
+  transition: 1s;
   border-color: #4e91c9;
 }
 
@@ -1088,9 +1098,10 @@ span[class*="border-"] {
 }
 
 .blue-button:hover {
+  border: 2px solid #4e91c9;
   background-image: linear-gradient(to left, rgb(103, 57, 212), #539edb);
-  color: rgb(173, 168, 168);
-  transition: 0.4s;
+  color: rgb(245, 227, 227);
+  transition: 0.8s;
 }
 
 .yellow {
@@ -1108,4 +1119,7 @@ a:visited,
 a:link {
   text-decoration: none;
   color: white;
+}
+.blog {
+  color: black;
 }
