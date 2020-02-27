@@ -1,255 +1,405 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
-	<title>Devin's Portfolio</title>
-<!--
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimal-ui"
+    />
+    <title>Devin's Portfolio</title>
+    <!--
 Raleway Template 
 http://www.templatemo.com/preview/templatemo_421_raleway
 -->
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/simple-line-icons.css">
-	<link rel="stylesheet" href="css/animate.css">
-	<link rel="stylesheet" href="css/templatemo_style.css">
-	<link rel="icon" href="./img/favicon.ico">
-</head>
-<body>
-	<header class="site-header container animated fadeInDown">
-		<div class="header-wrapper">
-			<div class="row">
-				<div class="col-md-4">
-					<div class="site-branding">
-						<a href="#"><h1>Devin Dias</h1></a>
-					</div>
-				</div>
-				<a href="#" class="toggle-nav hidden-md hidden-lg">
-					<i class="fa fa-bars"></i>
-				</a>
-				<div class="col-md-8">
-					<nav id="nav" class="main-navigation hidden-xs hidden-sm">
-						<ul class="main-menu">
-							<li><a class="show-1 active homebutton" href="#">Home</a></li>
-							<li><a class="show-2 aboutbutton" href="#">About Me</a></li>
-							<li><a class="show-3 projectbutton" href="#">Projects</a></li>
-							<!-- <li><a class="show-4 blogbutton" href="#">Blog Entries</a></li> -->
-							<li><a class="show-5 contactbutton" href="#">Contact</a></li>
-						</ul>
-					</nav>
-					<nav class="main-navigation menu-responsive hidden-md hidden-lg">
-						<ul class="main-menu">
-							<li><a class="show-1 active homebutton" href="#">Home</a></li>
-							<li><a class="show-2 aboutbutton" href="#">About Us</a></li>
-							<li><a class="show-3 projectbutton" href="#">Projects</a></li>
-							<li><a class="show-4 blogbutton" href="#">Blog Entries</a></li>
-							<li><a class="show-5 contactbutton" href="#">Contact</a></li>
-						</ul>
-					</nav>
-				</div>
-			</div>
-		</div>
-	</header>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/simple-line-icons.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/templatemo_style.css" />
+    <link rel="icon" href="./img/favicon.ico" />
+  </head>
+  <body>
+    <header class="site-header container animated fadeInDown">
+      <div class="header-wrapper">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="site-branding">
+              <a href="#"><h1>Devin Dias</h1></a>
+            </div>
+          </div>
+          <a href="#" class="toggle-nav hidden-md hidden-lg">
+            <i class="fa fa-bars"></i>
+          </a>
+          <div class="col-md-8">
+            <nav id="nav" class="main-navigation hidden-xs hidden-sm">
+              <ul class="main-menu">
+                <li><a class="show-1 active homebutton" href="#">Home</a></li>
+                <li><a class="show-2 aboutbutton" href="#">About Me</a></li>
+                <li><a class="show-3 projectbutton" href="#">Projects</a></li>
+                <!-- <li><a class="show-4 blogbutton" href="#">Blog Entries</a></li> -->
+                <li><a class="show-5 contactbutton" href="#">Contact</a></li>
+              </ul>
+            </nav>
+            <nav class="main-navigation menu-responsive hidden-md hidden-lg">
+              <ul class="main-menu">
+                <li><a class="show-1 active homebutton" href="#">Home</a></li>
+                <li><a class="show-2 aboutbutton" href="#">About Us</a></li>
+                <li><a class="show-3 projectbutton" href="#">Projects</a></li>
+                <li><a class="show-4 blogbutton" href="#">Blog Entries</a></li>
+                <li><a class="show-5 contactbutton" href="#">Contact</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
 
-	
-	<div id="menu-container">
-		<div id="menu-1" class="homepage home-section container">
-			<div class="home-intro text-center">
-				<h2 class="welcome-title animated fadeInLeft"><span class="color3"> Develop<span class="yellow2">er</span></span></h2>
-				<p class="animated fadeInRight">Full-stack application development utilizing the latest technologies  and best practices for standardization and optimization.
-				</p> <br>
-				<p class="animated fadeInDown"><span class="yellow">Learning new technologies is my greatest passion!</span></p>
-				<ul class="list-icons animated fadeInUp">
-					<li><img src="./img/logo1.png" alt="logo" height="60" width="60"></li>
-					<li><img src="./img/logo2.png" alt="logo" height="50" width="50"></li>
-					<li><img src="./img/logo8.png" alt="logo" height="50" width="50"></li>
-					<li><img src="./img/logo4.png" alt="logo" height="50" width="50"></li>
-					<li><img src="./img/logo7.png" alt="logo" height="50" width="50"></li>
-					<li><img src="./img/logo6.png" alt="logo" height="50" width="50"></li>
-				</ul>
-			</div>
-			<div class="home-projects">
-				<div class="row">
-					<div class="col-md-6 col-sm-12">
-						<div class="project-title animated fadeInUp">
-							<h2>Latest Projects</h2>
-							<p>These are some of my most recent projects I have built for personal or Open-Source use.<br><br>Please visit my GitHub to view my source code for all of my projects!</p>
-							<a target="_blank" href="https://github.com/devin5" class="blue-button">github</a>
-						</div>
-					</div>
-					<div class="project-home-holder col-md-6 col-sm-12">
-						<div class="row">
-							<div class="col-md-6 col-sm-6">
-								<div class="project-item one animated fadeInRight">
-									<img src="img/pro1.png" alt="project image" height="140" width="140">
-									<div class="overlay">
-										<h4><a target="_blank" href="https://dark-mode.devindiastech.now.sh/">Crypto-Tracker with darkmode / sessions</a></h4>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 col-sm-6">
-								<div class="project-item two animated fadeInRight">
-									<img src="img/pro2.png" alt="project image" height="140" width="140">
-									<div class="overlay">
-										<h4><a target="_blank" href="https://front-end-1.devindiastech.now.sh/createevent85">Full Planner Application with authorization</a></h4>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 col-sm-6">
-								<div class="project-item three animated fadeInRight">
-									<img src="img/pro3.png"
-									" alt="project image" height="140" width="140">
-									<div class="overlay">
-										<h4><a target="_blank" href="https://mystifying-brahmagupta-5b4ee8.netlify.com/">Vanilla JS components with Axios and Hamburger Menu</a></h4>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 col-sm-6">
-								<div class="project-item four animated fadeInRight">
-									<img src="img/pro4.png" alt="project image" height="140" width="140">
-									<div class="overlay">
-										<h4><a target="_blank" href="https://react-shopping-cart.devindiastech.now.sh/">Building an online store for books</a></h4>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+    <div id="menu-container">
+      <div id="menu-1" class="homepage home-section container">
+        <div class="home-intro text-center">
+          <h2 class="welcome-title animated fadeInLeft">
+            <span class="color3"> Develop<span class="yellow2">er</span></span>
+          </h2>
+          <p class="animated fadeInRight">
+            Full-stack application development utilizing the latest technologies
+            and best practices for standardization and optimization.
+          </p>
+          <br />
+          <p class="animated fadeInDown">
+            <span class="yellow"
+              >Learning new technologies is my greatest passion!</span
+            >
+          </p>
+          <ul class="list-icons animated fadeInUp">
+            <li>
+              <img src="./img/logo1.png" alt="logo" height="60" width="60" />
+            </li>
+            <li>
+              <img src="./img/logo2.png" alt="logo" height="50" width="50" />
+            </li>
+            <li>
+              <img src="./img/logo8.png" alt="logo" height="50" width="50" />
+            </li>
+            <li>
+              <img src="./img/logo4.png" alt="logo" height="50" width="50" />
+            </li>
+            <li>
+              <img src="./img/logo7.png" alt="logo" height="50" width="50" />
+            </li>
+            <li>
+              <img src="./img/logo6.png" alt="logo" height="50" width="50" />
+            </li>
+          </ul>
+        </div>
+        <div class="home-projects">
+          <div class="row">
+            <div class="col-md-6 col-sm-12">
+              <div class="project-title animated fadeInUp">
+                <h2>Latest Projects</h2>
+                <p>
+                  These are some of my most recent projects I have built for
+                  personal or Open-Source use.<br /><br />Please visit my GitHub
+                  to view my source code for all of my projects!
+                </p>
+                <a
+                  target="_blank"
+                  href="https://github.com/devin5"
+                  class="blue-button"
+                  >github</a
+                >
+              </div>
+            </div>
+            <div class="project-home-holder col-md-6 col-sm-12">
+              <div class="row">
+                <div class="col-md-6 col-sm-6">
+                  <div class="project-item one animated fadeInRight">
+                    <img
+                      src="img/pro1.png"
+                      alt="project image"
+                      height="140"
+                      width="140"
+                    />
+                    <div class="overlay">
+                      <h4>
+                        <a
+                          target="_blank"
+                          href="https://dark-mode.devindiastech.now.sh/"
+                          >Crypto-Tracker with Reactgraphs and custom hooks</a
+                        >
+                      </h4>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-sm-6">
+                  <div class="project-item two animated fadeInRight">
+                    <img
+                      src="img/pro2.png"
+                      alt="project image"
+                      height="140"
+                      width="140"
+                    />
+                    <div class="overlay">
+                      <h4>
+                        <a
+                          target="_blank"
+                          href="https://front-end-1.devindiastech.now.sh/createevent85"
+                          >Full Stack Application utilizing node.js and React W/
+                          Redux</a
+                        >
+                      </h4>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-sm-6">
+                  <div class="project-item three animated fadeInRight">
+                    <img src="img/pro3.png" " alt="project image" height="140"
+                    width="140">
+                    <div class="overlay">
+                      <h4>
+                        <a
+                          target="_blank"
+                          href="https://mystifying-brahmagupta-5b4ee8.netlify.com/"
+                          >Vanilla JS components with Axios API request and
+                          Hamburger Menu</a
+                        >
+                      </h4>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-sm-6">
+                  <div class="project-item four animated fadeInRight">
+                    <img
+                      src="img/pro4.png"
+                      alt="project image"
+                      height="140"
+                      width="140"
+                    />
+                    <div class="overlay">
+                      <h4>
+                        <a
+                          target="_blank"
+                          href="https://react-shopping-cart.devindiastech.now.sh/"
+                          >ReactHooks w/ SCSS</a
+                        >
+                      </h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-		<div id="menu-2" class="content about-section container">
-			<div class="our-story">
-				<div class="story-bg animated fadeIn"></div>
-				<div class="row">
-					<div class="col-md-6 col-md-offset-3">
-						<div class="inner-story animated fadeInRight text-center">
-							<h2>ABOUT ME</h2>
-							<p>My name is Devin Dias. I am a Developer located in Austin, TX. I love to code, but I would say my biggest passion in learning new technologies! I believe there is no greater power than knowledge. I understand it is important to be open minded and receptive to others with different backgrounds and experiences!
-							</p>
-							
-							<!-- <p> Check out my blog to learn more about me </p> -->
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="our-offers">
-				<div class="offer-bg animated fadeIn"></div>
-				<div class="offer-header">
-					<div class="row">
-						<div class="col-md-6 col-md-offset-3 text-center">
-							<div class="offer-title animated fadeInDown">
-								<h2> MY WORK</h2>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="offer-holder">
-						<div class="col-md-6">
-							<div class="offer-item offer-1 animated fadeInLeft">
-								<figure>
-									<img src="img/fe.png" height="200" alt="Front-end code">
-								</figure>
-								<div class="offer-content text-center">
-									<h4>FRONT-END</h4>
-									<p>I have built websites and single page applications using Figma for design and developing code with HTML5, CSS, LESS/SASS, Javascript, Bootstrap, jQuery, Redux, and React. My favorite front-end technology is by far React. I love its approach to constructing small, interchangeable, and reusable components which decrease development time while increasing productivity and scalability.</p>
-									<span class="offer-left"><i></i></span>
-									<span class="offer-right"><i></i></span>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-6">
-							<div class="offer-item offer-2 animated fadeInRight">
-								<figure>
-									<img src="img/be.png" height="200" alt="back-end code">
-								</figure>
-								<div class="offer-content text-center">
-									<h4>Back-END</h4>
-									<p>I have built servers utilizing Node.js and Express with RESTful api's for front-end applications. I have designed and managed databases in SQLite for development and PostgreSQL for production. My favorite libraries are Knex and Node.js! I appreciate the one language for everything paradigm, and I believe it is amazing you can write the front-end application, the API, and even the SQL Queries in Javascript.</p>
-									<span class="offer-left"><i></i></span>
-									<span class="offer-right"><i></i></span>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+      <div id="menu-2" class="content about-section container">
+        <div class="our-story">
+          <div class="story-bg animated fadeIn"></div>
+          <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+              <div class="inner-story animated fadeInRight text-center">
+                <h2>ABOUT ME</h2>
+                <p>
+                  My name is Devin Dias. I am a Developer located in Austin, TX.
+                  I love to code, but I would say my biggest passion in learning
+                  new technologies! I believe there is no greater power than
+                  knowledge. I understand it is important to be open minded and
+                  receptive to others with different backgrounds and
+                  experiences!
+                </p>
 
-		<div id="menu-3" class="content project-section container">
-			<div class="projects-header">
-				<h2 class="animated fadeInRight" ><span class="color3">My projects</span></h2>
-				<p class="animated fadeInLeft">These are some of my most recent projects I have built for personal or Open-Source use.<br><br>Please visit my GitHub to view my source code for all of my projects!</p>
-				<a target="_blank" href="https://github.com/devin5" class="animated umScaleIn blue-button">github</a>
-			</div>
-			<div class="projects-holder">
-				<div class="row">
-					<div class="col-md-4 col-sm-6 p-1 animated umScaleIn">
-						<div class="project-item">
-							<img src="img/pro1.png" alt="Image of project">
-							<div class="overlay">
-								<h4><a target="_blank" href="https://dark-mode.devindiastech.now.sh/">Crypto-Tracker with darkmode / sessions</a></h4>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4 col-sm-6 p-2 animated umScaleIn">
-						<div class="project-item">
-							<img src="img/pro2.png" alt="Image of project">
-							<div class="overlay">
-								<h4><a target="_blank" href="https://front-end-1.devindiastech.now.sh/createevent85">Application with authorization state manages with REDUX</a></h4>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4 col-sm-6 p-3 animated umScaleIn">
-						<div class="project-item">
-							<img src="img/pro3.png" alt="Image of project">
-							<div class="overlay">
-								<h4><a target="_blank" href="https://mystifying-brahmagupta-5b4ee8.netlify.com/">Vanilla JS components with Axios and Hamburger Menu</a></h4>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-3 col-sm-6 p-4 animated umScaleIn">
-						<div class="project-item animated umScaleIn">
-							<img src="img/pro4.png" alt="Image of project">
-							<div class="overlay">
-								<h4><a target="_blank" href="https://react-shopping-cart.devindiastech.now.sh/">Building an online store for books</a></h4>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-3 col-sm-6">
-						<div class="project-item p-5 animated umScaleIn">
-							<img src="img/pro5.png" alt="Image of project">
-							<div class="overlay">
-								<h4><a target="_blank" href="https://fe.devindiastech.now.sh/guest">Wedding Planner website utilizing a Node backend and postgres DB
+                <!-- <p> Check out my blog to learn more about me </p> -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="our-offers">
+          <div class="offer-bg animated fadeIn"></div>
+          <div class="offer-header">
+            <div class="row">
+              <div class="col-md-6 col-md-offset-3 text-center">
+                <div class="offer-title animated fadeInDown">
+                  <h2>MY WORK</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="offer-holder">
+              <div class="col-md-6">
+                <div class="offer-item offer-1 animated fadeInLeft">
+                  <figure>
+                    <img src="img/fe.png" height="200" alt="Front-end code" />
+                  </figure>
+                  <div class="offer-content text-center">
+                    <h4>FRONT-END</h4>
+                    <p>
+                      I have built websites and single page applications using
+                      Figma for design and developing code with HTML5, CSS,
+                      LESS/SASS, Javascript, Bootstrap, jQuery, Redux, and
+                      React. My favorite front-end technology is by far React. I
+                      love its approach to constructing small, interchangeable,
+                      and reusable components which decrease development time
+                      while increasing productivity and scalability.
+                    </p>
+                    <span class="offer-left"><i></i></span>
+                    <span class="offer-right"><i></i></span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="offer-item offer-2 animated fadeInRight">
+                  <figure>
+                    <img src="img/be.png" height="200" alt="back-end code" />
+                  </figure>
+                  <div class="offer-content text-center">
+                    <h4>Back-END</h4>
+                    <p>
+                      I have built servers utilizing Node.js and Express with
+                      RESTful api's for front-end applications. I have designed
+                      and managed databases in SQLite for development and
+                      PostgreSQL for production. My favorite libraries are Knex
+                      and Node.js! I appreciate the one language for everything
+                      paradigm, and I believe it is amazing you can write the
+                      front-end application, the API, and even the SQL Queries
+                      in Javascript.
+                    </p>
+                    <span class="offer-left"><i></i></span>
+                    <span class="offer-right"><i></i></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-								</a></h4>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-3 col-sm-6">
-						<div class="project-item p-6 animated umScaleIn">
-							<img src="img/pro6.png" alt="Image of project" height=170>
-							<div class="overlay">
-								<h4><a target="_blank" href="https://sprint-challenge-single-page-apps.devindiastech.now.sh/character">React APP using MaterialUI and SemanticUI Libraries</a></h4>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-3 col-sm-6">
-						<div class="project-item p-7 animated umScaleIn">
-							<img src="img/pro7.png" alt="Image of project" height=170>
-							<div class="overlay">
-								<h4><a target="_blank" href="https://lambda-calculator.devindiastech.now.sh/">Fully functioning calculater... practice using useHooks</a></h4>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+      <div id="menu-3" class="content project-section container">
+        <div class="projects-header">
+          <h2 class="animated fadeInRight">
+            <span class="color3">My projects</span>
+          </h2>
+          <p class="animated fadeInLeft">
+            These are some of my most recent projects I have built for personal
+            or Open-Source use.<br /><br />Please visit my GitHub to view my
+            source code for all of my projects!
+          </p>
+          <a
+            target="_blank"
+            href="https://github.com/devin5"
+            class="animated umScaleIn blue-button"
+            >github</a
+          >
+        </div>
+        <div class="projects-holder">
+          <div class="row">
+            <div class="col-md-4 col-sm-6 p-1 animated umScaleIn">
+              <div class="project-item">
+                <img src="img/pro1.png" alt="Image of project" />
+                <div class="overlay">
+                  <h4>
+                    <a
+                      target="_blank"
+                      href="https://dark-mode.devindiastech.now.sh/"
+                      >Crypto-Tracker with Reactgraphs and custom hooks</a
+                    >
+                  </h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6 p-2 animated umScaleIn">
+              <div class="project-item">
+                <img src="img/pro2.png" alt="Image of project" />
+                <div class="overlay">
+                  <h4>
+                    <a
+                      target="_blank"
+                      href="https://front-end-1.devindiastech.now.sh/createevent85"
+                      >Full Stack Application utilizing node.js and React W/
+                      Redux</a
+                    >
+                  </h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6 p-3 animated umScaleIn">
+              <div class="project-item">
+                <img src="img/pro3.png" alt="Image of project" />
+                <div class="overlay">
+                  <h4>
+                    <a
+                      target="_blank"
+                      href="https://mystifying-brahmagupta-5b4ee8.netlify.com/"
+                      >Vanilla JS components with Axios and Hamburger Menu</a
+                    >
+                  </h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-3 col-sm-6 p-4 animated umScaleIn">
+              <div class="project-item animated umScaleIn">
+                <img src="img/pro4.png" alt="Image of project" />
+                <div class="overlay">
+                  <h4>
+                    <a
+                      target="_blank"
+                      href="https://react-shopping-cart.devindiastech.now.sh/"
+                      >ReactHooks w/ SCSS</a
+                    >
+                  </h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <div class="project-item p-5 animated umScaleIn">
+                <img src="img/pro5.png" alt="Image of project" />
+                <div class="overlay">
+                  <h4>
+                    <a
+                      target="_blank"
+                      href="https://fe.devindiastech.now.sh/guest"
+                      >Wedding Planner website utilizing a Node backend and
+                      postgres DB
+                    </a>
+                  </h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <div class="project-item p-6 animated umScaleIn">
+                <img src="img/pro6.png" alt="Image of project" height="170" />
+                <div class="overlay">
+                  <h4>
+                    <a
+                      target="_blank"
+                      href="https://sprint-challenge-single-page-apps.devindiastech.now.sh/character"
+                      >React APP using MaterialUI and SemanticUI Libraries</a
+                    >
+                  </h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <div class="project-item p-7 animated umScaleIn">
+                <img src="img/pro7.png" alt="Image of project" height="170" />
+                <div class="overlay">
+                  <h4>
+                    <a
+                      target="_blank"
+                      href="https://lambda-calculator.devindiastech.now.sh/"
+                      >Fully functioning calculater... practice using
+                      useHooks</a
+                    >
+                  </h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-		<!-- <div id="menu-4" class="content blog-section container">
+      <!-- <div id="menu-4" class="content blog-section container">
 			<div class="blog-header text-center">
 				<h2 class="animated fadeInRight">Blog entries</h2>
 				<p class="animated fadeInLeft">Sed sagittis nunc vel tellus ultricies auctor. Class aptent taciti sociosqu ad litora torquent per.</p>
@@ -292,79 +442,106 @@ http://www.templatemo.com/preview/templatemo_421_raleway
 			</div>
 		</div> -->
 
-		<div id="menu-5" class="content contact-section container">
-			<div class="contact-header text-center">
-				<h2 class="animated fadeInLeft">Get in Touch</h2>
-				<p class="animated fadeInRight">Feel free to talk to us about anything.</p>
-				<ul class="contact-social animated fadeInUp">
-					<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-					<li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-					<li><a href="#"><i class="fa fa-instagram"></i></a></li>
-					<li><a href="#"><i class="fa fa-share-alt"></i></a></li>
-				</ul>
-			</div>
-			<div class="contact-holder">
-				<div class="row">
-					<div class="col-md-6 col-sm-12">
-			            <div class="googlemap-wrapper animated fadeInLeft">
-                            <div id="map_canvas" class="map-canvas"></div>
-                        </div>
-					</div>
-					<div class="col-md-6 col-sm-12">
-						<div class="contact-form animated fadeInUp">
-							<h4>Send us a Message</h4>
-							<div class="row">
-								<fieldset class="col-md-6">
-									<input type="text" name="name" placeholder="Your name">
-								</fieldset>
-								<fieldset class="col-md-6">
-									<input type="email" name="email" placeholder="Your name">
-								</fieldset>
-								<fieldset class="col-md-12">
-									<input type="text" name="subject" placeholder="Subject">
-								</fieldset>
-								<fieldset class="col-md-12">
-									<textarea name="message" id="message" cols="30" rows="10" placeholder="Describe your Project"></textarea>
-								</fieldset>
-								<fieldset class="col-md-12">
-									<a href="#" class="message-button">Submit Message</a>
-								</fieldset>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+      <div id="menu-5" class="content contact-section container">
+        <div class="contact-header text-center">
+          <h2 class="animated fadeInLeft">Get in Touch</h2>
+          <p class="animated fadeInRight">
+            Feel free to talk to us about anything.
+          </p>
+          <ul class="contact-social animated fadeInUp">
+            <li>
+              <a href="#"><i class="fa fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-dribbble"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-share-alt"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="contact-holder">
+          <div class="row">
+            <div class="col-md-6 col-sm-12">
+              <div class="googlemap-wrapper animated fadeInLeft">
+                <div id="map_canvas" class="map-canvas"></div>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-12">
+              <div class="contact-form animated fadeInUp">
+                <h4>Send us a Message</h4>
+                <div class="row">
+                  <fieldset class="col-md-6">
+                    <input type="text" name="name" placeholder="Your name" />
+                  </fieldset>
+                  <fieldset class="col-md-6">
+                    <input type="email" name="email" placeholder="Your name" />
+                  </fieldset>
+                  <fieldset class="col-md-12">
+                    <input type="text" name="subject" placeholder="Subject" />
+                  </fieldset>
+                  <fieldset class="col-md-12">
+                    <textarea
+                      name="message"
+                      id="message"
+                      cols="30"
+                      rows="10"
+                      placeholder="Describe your Project"
+                    ></textarea>
+                  </fieldset>
+                  <fieldset class="col-md-12">
+                    <a href="#" class="message-button">Submit Message</a>
+                  </fieldset>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
+    <footer class="site-footer container text-center">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="main-footer">
+            <ul class="social">
+              <li>
+                <a target="_blank" href="https://github.com/devin5/">Github</a>
+              </li>
+              <li>
+                <a target="_blank" href="https://codepen.io/devin5-the-sasster/"
+                  >Codepen</a
+                >
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  href="https://www.linkedin.com/in/devin-dias-94586418a/"
+                  >Linkedin</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 copyright">
+          <p>Copyright &copy; 2018 <a href="#">Devin Dias</a></p>
+        </div>
+      </div>
+    </footer>
+    <!-- templatemo 421 raleway -->
+    <span class="border-top"></span>
+    <span class="border-left"></span>
+    <span class="border-right"></span>
+    <span class="border-bottom"></span>
+    <span class="shape-1"></span>
+    <span class="shape-2"></span>
 
-	<footer class="site-footer container text-center">
-		<div class="row">
-			<div class="col-md-12">
-				<div class="main-footer">
-					<ul class="social">
-						<li><a target="_blank" href="https://github.com/devin5/">Github</a></li>
-						<li><a target="_blank" href="https://codepen.io/devin5-the-sasster/">Codepen</a></li>
-						<li><a target="_blank" href="https://www.linkedin.com/in/devin-dias-94586418a/">Linkedin</a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-12 copyright">
-				<p>Copyright &copy; 2018 <a href="#">Devin Dias</a></p>
-			</div>
-		</div>
-	</footer>
-	<!-- templatemo 421 raleway -->
-	<span class="border-top"></span>
-	<span class="border-left"></span>
-	<span class="border-right"></span>
-	<span class="border-bottom"></span>
-	<span class="shape-1"></span>
-	<span class="shape-2"></span>
-
-	<script src="js/jquery.min.js"></script>
-	<script src="js/templatemo_custom.js"></script>
-</body>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/templatemo_custom.js"></script>
+  </body>
 </html>
